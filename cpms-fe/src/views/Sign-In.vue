@@ -47,6 +47,12 @@
 				<!-- / Sign In Form -->
 
 				<p class="font-semibold text-muted">Don't have an account? <router-link to="/sign-up" class="font-bold text-dark">Sign Up</router-link></p>
+				<a-alert
+				message="Informational Notes"
+				description="Default User Login : admin@gmail.com & Password : P@ssw0rd"
+				type="info"
+				show-icon
+				/>
 			</a-col>
 			<!-- / Sign In Form Column -->
 
@@ -55,7 +61,7 @@
 				<img src="images/img-signin.jpg" alt="">
 			</a-col>
 			<!-- Sign In Image Column -->
-
+			
 		</a-row>
 		
 	</div>

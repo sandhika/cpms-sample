@@ -1,4 +1,5 @@
 ﻿using System;
+using cpms.Api.Models;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -73,6 +74,14 @@ namespace cpms.Api.Migrations
                 table: "User",
                 column: "UserName",
                 unique: true);
+
+            migrationBuilder.InsertData(
+                table: "User",
+            columns: new[] { "UserName","Email","Role","IsActive","Password" },
+            values: new object[,]
+            {
+                { "admin","admin@gmail.com","Admin",true,"$2a$11$BAqPEaCA5QyzEbpy4E9zo.BEZ7qUdjsHnkaO7k3rqHNoWEuInrD5S" }
+        });
         }
 
         /// <inheritdoc />
